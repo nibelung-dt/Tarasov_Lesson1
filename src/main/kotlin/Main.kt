@@ -13,4 +13,16 @@ fun main() {
     val apply = SсopeFunInfo("Use apply for code blocks that don't return a value and mainly operate on the members of the receiver object.", "this", "Context object", "Yes", "Object configuration: apply")
     val also = SсopeFunInfo("also is good for performing some actions that take the context object as an argument. Use also for actions that need a reference to the object rather than its properties and functions, or when you don't want to shadow the this reference from an outer scope.", "it", "Context object", "Yes", "Additional effects: also")
 
+    println("Введите also, with, apply или let, чтобы получить описание функции")
+    while(true) {
+        when(readln()) {
+            "let" -> println(let)
+            "with" -> println(with)
+            "apply" -> println(apply)
+            "also" -> println(also)
+            "exit" -> break
+            else -> println("введите also, with, apply или let")
+        }
+    }
+
 }
