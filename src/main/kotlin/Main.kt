@@ -29,4 +29,9 @@ fun main() {
         // for commit only
     }
 
+
+    fun test2() {
+        // for commit only
+    }
+    
 }
